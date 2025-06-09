@@ -1,0 +1,28 @@
+        <li><a href="#about" tabindex="0">About</a></li>
+        <li><a href="#contact" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Welcome to MyBrand</h1>
+  <p>Scroll down to see the navigation menu style change and hover over the menu items for interactive effects.</p>
+  <section id="home" style="height:500px;"></section>
+  <section id="features" style="height:400px;"></section>
+  <section id="pricing" style="height:400px;"></section>
+  <section id="about" style="height:400px;"></section>
+  <section id="contact" style="height:400px;"></section>
+</main>
+<script>
+  const navbar = document.getElementById('navbar');
+  const scrollThreshold = 50;
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > scrollThreshold){
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+</body>
+</html>
